@@ -1,0 +1,237 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Rahul Mishra} \\ \vspace{1pt}
+    14/180 Mansarovar Sector-1, Jaipur, Rajasthan, 302020 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 9664184581 ~ \href{mailto:rahulmishra.kv@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{rahulmishra.kv@gmail.com}} ~ 
+    \href{https://linkedin.com/in/heyrmi/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}  ~
+    \href{https://github.com/heyrmi}{\raisebox{-0.2\height}\faGithub\ \underline{github}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {JECRC University}{Sep. 2017 -- May 2021}
+      {Bachelor of Technology in Computer Science and Engineering}{Jaipur, Rajasthan}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Software Methodology
+                \item Algorithms Analysis
+                \item Database Management
+                \item Artificial Intelligence
+                \item Internet Technology
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AU Bank}{June 2021 -- Present}
+      {Automation Test Engineer}{Jaipur, Rajasthan}
+      \resumeItemListStart
+        \resumeItem{Corporate Internet Banking}
+        {Worked on Automation Testing of Corporate Internet Banking website and Mobile App. Corporate Internet Banking is an internet banking website/app for corporates which generates a significant revenue thus holds importance.}
+        \resumeItem{Selenium Web Automation Framework}
+        {Made Selenium Web Automation Framework from scratch for the Automation Testing of CIB and other applications and provided it to other teams working on different projects.}
+        \resumeItem{Appium Mobile Automation Framework}
+        {Made mobile app automation framework from scratch using Appium for the Automation Testing of CIB mobile app.}
+        \resumeItem{TestNG }
+        {Used and managed TestNG in selenium framework to control execution and manage test methods and provide test data through TestNG Annotations for each test case.}
+        \resumeItem{Extent Reports}
+        {Extent reports provide beautiful and detailed test results at the end of the test execution. Used Extent Reports dynamically in the framework. Shared with business team and production support team to lessen their hassle.}
+        \resumeItem{Maven}
+        {Maven is a build tool, used to manage dependencies through easy XML manipulation. Used Maven instead of Gradle in projects.}
+        \resumeItem{Apache POI}
+        {Apache POI is mainly used to read and write from and to Excel Files, used custom Utility methods to read/write data from excel files as the framework was Data Driven.}
+        \resumeItem{Jenkins}
+        {Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        \resumeItem{ElasticSearch and Kibana}
+        {ELK Stack is most commonly used as a log analytics tool, integrated Kibana to the framework for a Dashboard of Live Reporting feature while running the test scripts.}
+        \resumeItem{Docker}
+        {Ran everything inside a docker container thus removing the system dependency on the code and associated softwares.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Open-Source and Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/heyrmi/HybridTestFramework}{\underline{Hybrid Test Framework}}} $|$ \emph{Open Source Project: Java, Selenium, RestAssured, OWASP}}{December 2021}
+          \resumeItemListStart
+            \resumeItem{Forked}{And made changes and made some Pull Request. Still playing and experimenting with code to understand the intricacies.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/heyrmi/BC-using-CPP}{\underline{BlockChain Core}}} $|$ \emph{C++}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{Blockchain using CPP}{Developed a Blockchain backend using C++, where transactions could be done and verified. Learnt about SHA256 for encryption on user's transaction details.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Unpack} $|$ \emph{Internship Project: Python, Django}}{May 2020}
+          \resumeItemListStart
+            \resumeItem{Backend}{Worked on Backend Development of a simple E-Commerce website using Django in which I got to work on Views, Urls, and Model of the application}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages: }{Java, Python, C++} \\
+     \textbf{Developer Tools: }{VS Code, Eclipse, Amazon Web Services} \\
+     \textbf{Technologies/Frameworks: }{Linux(Ubuntu), Selenium, TestNG, Jenkins, GitHub, Docker, Elasticsearch, Kibana} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Courses / Links}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Applied AI Course} $|$ \emph{Python, Numpy, Matplotlib, Scikit Learn, Tensorflow}}{June 2019 - May 2020}
+          \resumeItemListStart
+            \resumeItem{Applied AI Course}{is 250+ hour course on Applied Machine Learning and Deep Learning.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://leetcode.com/heyrmi/}{\underline{Leetcode Profile}}} $|$ \emph{Please click the link to open}} {}
+      
+          
+          \vspace{-10pt}
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
